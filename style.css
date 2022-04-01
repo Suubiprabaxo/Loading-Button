@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+}
+.bg{
+  background: url('https://i.pinimg.com/originals/6e/fb/e3/6efbe3567741ded9946dfe9038de6097.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + 30px);
+  height: calc(100vh + 40px);
+  opacity: calc(100vw + 30px);
+  filter: blur(0px);
+  z-index: -1;
+}
+.loading-text{
+  font-size: 45px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+#container {
+  position: absolute;
+}
+
+.bt1 {
+  text-align: center;
+  left: 200%;
+  font-size: 30px;
+  padding: 15px 40px;
+  border: 2px solid #051c2e;
+  border-radius: 5px; 
+}
+.bt2 {
+  text-align: center;
+  font-size: 30px;
+  padding: 15px 40px;
+  border: 2px solid #051c2e;
+  border-radius: 5px; 
+}
+.bt3 {
+  text-align: center;
+  right: 200%;
+  font-size: 30px;
+  padding: 15px 40px;
+  border: 2px solid #051c2e;
+  border-radius: 5px; 
+}
+
+.bt {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 100ms 300ms;
+  -o-transition: 100ms 300ms;
+  transition: 100ms 300ms; }
+.bt:hover {
+    border: 2px solid;
+    border-radius: 5px; }
+
+.bt1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #ff0080;
+    z-index: -1;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+    bottom: 0;
+    border-radius: 40px 40px 0 0;
+    -webkit-box-shadow: 0 0 10px #ff0080, 0 0 40px #ff0080, 0 0 80px #ff0080;
+            box-shadow: 0 0 10px #ff0080, 0 0 40px #ff0080, 0 0 80px #ff0080; }
+      .bt1:hover::before {
+    height: 180%; }
+      .bt1:hover {
+      -webkit-box-shadow: 0 0 10px #ff0080, 0 0 40px #ff0080, 0 0 80px #ff0080;
+            box-shadow: 0 0 10px #ff0080, 0 0 40px #ff0080, 0 0 80px #ff0080; }
+  
+  
+.bt2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #ccb115;
+    z-index: -1;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+    bottom: 0;
+    border-radius: 40px 40px 0 0;
+    -webkit-box-shadow: 0 0 10px #ccb115, 0 0 40px #ccb115, 0 0 80px #ccb115;
+            box-shadow: 0 0 10px #ccb115, 0 0 40px #ccb115, 0 0 80px #ccb115; }
+        .bt2:hover::before {
+    height: 180%; }
+        .bt2:hover {
+    -webkit-box-shadow: 0 0 10px #ccb115, 0 0 40px #ccb115, 0 0 80px #ccb115;
+            box-shadow: 0 0 10px #ccb115, 0 0 40px #ccb115, 0 0 80px #ccb115; }
+  
+
+.bt3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #00ffd5;
+    z-index: -1;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+    bottom: 0;
+    border-radius: 40px 40px 0 0;
+    -webkit-box-shadow: 0 0 10px #00ffd5, 0 0 40px #00ffd5, 0 0 80px #00ffd5;
+            box-shadow: 0 0 10px #00ffd5, 0 0 40px #00ffd5, 0 0 80px #00ffd5; }
+            .bt3:hover::before {
+    height: 180%; }
+            .bt3:hover {
+    -webkit-box-shadow: 0 0 10px #00ffd5, 0 0 40px #00ffd5, 0 0 80px #00ffd5;
+            box-shadow: 0 0 10px #00ffd5, 0 0 40px #00ffd5, 0 0 80px #00ffd5; }
